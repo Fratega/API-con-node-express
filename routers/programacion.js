@@ -58,7 +58,7 @@ routerProgramacion.put('/:id', (req, res) => {
     if (indice >= 0) {
         programacion[indice] = cursoActualizado;
     }
-    res.send(JSON.stringify(programacion));
+    res.send(programacion);
 })
 
 routerProgramacion.patch('/:id', (req, res) => {
